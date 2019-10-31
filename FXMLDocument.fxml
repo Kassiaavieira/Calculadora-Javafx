@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="modelo" fx:id="telaTextField" blendMode="GREEN" cache="true" cacheHint="DEFAULT" disable="false" mouseTransparent="false" pickOnBounds="true" prefHeight="289.0" prefWidth="285.0" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="calculadora.FXMLDocumentController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <Button fx:id="seteButton" contentDisplay="LEFT" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#sete" prefHeight="46.0" prefWidth="47.0" text="7" textFill="#0052cc" textOverrun="ELLIPSIS" />
+    <Button fx:id="oitoButton" contentDisplay="LEFT" layoutX="61.0" layoutY="81.0" mnemonicParsing="false" onAction="#oito" prefHeight="46.0" prefWidth="47.0" text="8" textOverrun="ELLIPSIS">
+      <textFill>
+        <Color blue="0.800" green="0.322" red="0.000" fx:id="x1" />
+      </textFill>
+    </Button>
+    <Button fx:id="noveButton" contentDisplay="BOTTOM" layoutX="108.0" layoutY="81.0" mnemonicParsing="false" onAction="#nove" prefHeight="46.0" prefWidth="47.0" text="9" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="quatroButton" contentDisplay="LEFT" layoutX="14.0" layoutY="127.0" mnemonicParsing="false" onAction="#quatro" prefHeight="46.0" prefWidth="47.0" text="4" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="cincoButton" contentDisplay="LEFT" layoutX="61.0" layoutY="128.0" mnemonicParsing="false" onAction="#cinco" prefHeight="46.0" prefWidth="47.0" text="5" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="seisButton" contentDisplay="LEFT" layoutX="108.0" layoutY="128.0" mnemonicParsing="false" onAction="#seis" prefHeight="46.0" prefWidth="47.0" text="6" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="umButton" contentDisplay="LEFT" layoutX="14.0" layoutY="173.0" mnemonicParsing="false" onAction="#um" prefHeight="46.0" prefWidth="47.0" text="1" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="doisButton" contentDisplay="LEFT" layoutX="61.0" layoutY="173.0" mnemonicParsing="false" onAction="#dois" prefHeight="46.0" prefWidth="47.0" text="2" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="tresButton" contentDisplay="LEFT" layoutX="108.0" layoutY="174.0" mnemonicParsing="false" onAction="#tres" prefHeight="46.0" prefWidth="47.0" text="3" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button id="resultado" fx:id="zeroButton" contentDisplay="LEFT" layoutX="14.0" layoutY="220.0" mnemonicParsing="false" onAction="#zero" prefHeight="46.0" prefWidth="94.0" text="0" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="zerarButton" cancelButton="false" contentDisplay="LEFT" defaultButton="false" layoutX="161.0" layoutY="82.0" mnemonicParsing="false" onAction="#zerar" prefHeight="92.0" prefWidth="47.0" text="CE" textFill="BLACK" textOverrun="ELLIPSIS" wrapText="false" />
+    <Button fx:id="igualButton" contentDisplay="LEFT" layoutX="160.0" layoutY="173.0" mnemonicParsing="false" onAction="#igual" prefHeight="92.0" prefWidth="47.0" text="=" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="somaButton" contentDisplay="LEFT" layoutX="208.0" layoutY="82.0" mnemonicParsing="false" onAction="#soma" prefHeight="46.0" prefWidth="47.0" text="+" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="subtrairButton" contentDisplay="LEFT" layoutX="208.0" layoutY="128.0" mnemonicParsing="false" onAction="#subtrair" prefHeight="46.0" prefWidth="47.0" text="-" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="multiplicarButton" contentDisplay="LEFT" layoutX="208.0" layoutY="173.0" mnemonicParsing="false" onAction="#multiplicar" prefHeight="46.0" prefWidth="47.0" text="*" textFill="$x1" textOverrun="ELLIPSIS" />
+    <Button fx:id="dividirButton" contentDisplay="LEFT" layoutX="208.0" layoutY="219.0" mnemonicParsing="false" onAction="#dividir" prefHeight="46.0" prefWidth="47.0" text="/" textFill="$x1" textOverrun="ELLIPSIS" />
+    <TextField fx:id="resultado" layoutX="34.0" layoutY="24.0" onAction="#resultado" prefHeight="46.0" prefWidth="217.0" />
+  </children>
+</AnchorPane>
